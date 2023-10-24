@@ -7,6 +7,7 @@ import net.minecraft.entity.passive.VillagerEntity;
 import net.minecraft.entity.passive.WanderingTraderEntity;
 import net.minecraft.util.ActionResult;
 import net.minecraft.village.VillagerProfession;
+import net.xilver.sba.item.ModItems;
 import net.xilver.sba.util.ModLootTableModifiers;
 import net.xilver.sba.util.ModRegistries;
 import org.slf4j.Logger;
@@ -20,5 +21,6 @@ public class SBA implements ModInitializer {
 	public void onInitialize() {
 		ModLootTableModifiers.modifyLootTables();
 		ModRegistries.registerModStuffs();
+		ModItems.RegisterModItems();
 	}
 }
